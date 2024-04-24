@@ -1,0 +1,13 @@
+package com.aldo.aldo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class AldoApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

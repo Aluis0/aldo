@@ -1,0 +1,10 @@
+http://localhost:8080/aluno
+
+POST
+{
+	"id": 1,
+	"nome": "Aluno teste",
+	"endereco": "Paraiso",
+	"ra": "12932103213"
+}
+
