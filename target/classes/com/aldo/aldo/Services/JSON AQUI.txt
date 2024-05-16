@@ -1,10 +1,26 @@
-http://localhost:8080/aluno
+NOTA
 
-POST
+  {
+    "nome_disciplina": "matematica",
+    "nota": 9.0
+  }
+
+
+ALUNO
+
 {
-	"id": 1,
-	"nome": "Aluno teste",
-	"endereco": "Paraiso",
-	"ra": "12932103213"
+  "nome": "fernandinho",
+  "curso": "GPI",
+  "idade": 22,
+  "matricula": false
 }
 
+ENDERECO
+
+{
+    "rua": "rua da fatec",
+    "cidade": "Ferraz de Vasconcelos",
+    "estado": "Sao Paulo",
+    "cep": "0852200",
+    "numero": 110
+}

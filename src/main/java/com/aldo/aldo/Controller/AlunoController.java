@@ -1,9 +1,8 @@
-package com.aldo.aldo.Controller;
+package com.aldo.aldo.controller;
 
 import java.net.URI;
 import java.util.List;
 
-import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -16,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.aldo.aldo.Model.Aluno;
 import com.aldo.aldo.Services.AlunoServices;
+import com.aldo.aldo.model.Aluno;
 
 @RestController
 @RequestMapping(value = "aluno")
@@ -49,6 +48,6 @@ public class AlunoController {
     @PutMapping(value = "/{id}")
     public ResponseEntity<Aluno> update(@PathVariable Integer id, @RequestBody Aluno aluno){
         Aluno objeto = services.update(id, aluno);
-        return ResponseEntity.ok().body(aluno);
+        return ResponseEntity.ok().body(objeto);
     }
 }
